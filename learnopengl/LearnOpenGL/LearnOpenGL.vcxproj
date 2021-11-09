@@ -19,8 +19,16 @@
     </ProjectConfiguration>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="glad.c" />
-    <ClCompile Include="hello_window.cpp" />
+    <ClCompile Include="src\glad.c" />
+    <ClCompile Include="src\hello_window.cpp" />
+    <ClCompile Include="src\shader.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="inc\shader.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="src\shader_frag.glsl" />
+    <None Include="src\shader_vertex.glsl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -76,16 +84,18 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw_lib\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Bowen\Desktop\OpenGL Tutorial\learnopengl\LearnOpenGL\inc;C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw_lib\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw_lib\libs;$(LibraryPath)</LibraryPath>
+    <SourcePath>C:\Users\Bowen\Desktop\OpenGL Tutorial\learnopengl\LearnOpenGL\src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <LinkIncremental>false</LinkIncremental>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw_lib\include;$(IncludePath)</IncludePath>
+    <IncludePath>C:\Users\Bowen\Desktop\OpenGL Tutorial\learnopengl\LearnOpenGL\inc;C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw_lib\include;$(IncludePath)</IncludePath>
     <LibraryPath>C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw_lib\libs;$(LibraryPath)</LibraryPath>
+    <SourcePath>C:\Users\Bowen\Desktop\OpenGL Tutorial\learnopengl\LearnOpenGL\src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <LinkIncremental>false</LinkIncremental>
