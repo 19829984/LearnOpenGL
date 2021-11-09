@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/Users/Bowen/Desktop/OpenGL Tutorial/glfw-3.3.5/tests/CMakeLists.txt
+  threads.c
+  tinycthread.c
+  glad_gl.c
+  Generating Code...
+  threads.vcxproj -> C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw-3.3.5\build\tests\Debug\threads.exe

@@ -1,0 +1,6 @@
+﻿  Building Custom Rule C:/Users/Bowen/Desktop/OpenGL Tutorial/glfw-3.3.5/tests/CMakeLists.txt
+  monitors.c
+  getopt.c
+  glad_gl.c
+  Generating Code...
+  monitors.vcxproj -> C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw-3.3.5\build\tests\Debug\monitors.exe
