@@ -22,13 +22,15 @@
     <ClCompile Include="src\glad.c" />
     <ClCompile Include="src\hello_window.cpp" />
     <ClCompile Include="src\shader.cpp" />
+    <ClCompile Include="src\stb_image.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="inc\shader.h" />
+    <ClInclude Include="inc\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="src\shader_frag.glsl" />
-    <None Include="src\shader_vertex.glsl" />
+    <None Include="src\resources\shaders\shader_frag.glsl" />
+    <None Include="src\resources\shaders\shader_vertex.glsl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
@@ -106,6 +108,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
@@ -135,6 +138,7 @@
       <SDLCheck>true</SDLCheck>
       <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ClCompile>
     <Link>
       <SubSystem>Console</SubSystem>
