@@ -20,7 +20,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="src\glad.c" />
-    <ClCompile Include="src\hello_window.cpp" />
+    <ClCompile Include="src\hello_world.cpp" />
     <ClCompile Include="src\shader.cpp" />
     <ClCompile Include="src\stb_image.c" />
   </ItemGroup>
@@ -30,6 +30,8 @@
     <ClInclude Include="inc\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="src\resources\shaders\light_frag.glsl" />
+    <None Include="src\resources\shaders\light_vertex.glsl" />
     <None Include="src\resources\shaders\shader_frag.glsl" />
     <None Include="src\resources\shaders\shader_vertex.glsl" />
   </ItemGroup>
