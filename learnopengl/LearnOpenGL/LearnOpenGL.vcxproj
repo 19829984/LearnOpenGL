@@ -25,13 +25,15 @@
     <ClCompile Include="src\stb_image.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="inc\mesh.h" />
+    <ClInclude Include="inc\model.h" />
     <ClInclude Include="inc\shader_m.h" />
-    <ClInclude Include="inc\shader.h" />
     <ClInclude Include="inc\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="src\resources\shaders\light_frag.glsl" />
     <None Include="src\resources\shaders\light_vertex.glsl" />
+    <None Include="src\resources\shaders\model_loading.glsl" />
     <None Include="src\resources\shaders\shader_frag.glsl" />
     <None Include="src\resources\shaders\shader_vertex.glsl" />
   </ItemGroup>
@@ -89,8 +91,8 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Bowen\Desktop\OpenGL Tutorial\learnopengl\LearnOpenGL\inc;C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw_lib\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw_lib\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Bowen\Desktop\OpenGL Tutorial\learnopengl\LearnOpenGL\inc;C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw_lib\include;C:\Users\Bowen\Desktop\OpenGL Tutorial\assimp\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Bowen\Desktop\OpenGL Tutorial\assimp\build\lib\Release;C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw_lib\libs;$(LibraryPath)</LibraryPath>
     <SourcePath>C:\Users\Bowen\Desktop\OpenGL Tutorial\learnopengl\LearnOpenGL\src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -98,8 +100,8 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <LinkIncremental>true</LinkIncremental>
-    <IncludePath>C:\Users\Bowen\Desktop\OpenGL Tutorial\learnopengl\LearnOpenGL\inc;C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw_lib\include;$(IncludePath)</IncludePath>
-    <LibraryPath>C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw_lib\libs;$(LibraryPath)</LibraryPath>
+    <IncludePath>C:\Users\Bowen\Desktop\OpenGL Tutorial\learnopengl\LearnOpenGL\inc;C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw_lib\include;C:\Users\Bowen\Desktop\OpenGL Tutorial\assimp\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Users\Bowen\Desktop\OpenGL Tutorial\assimp\build\lib\Release;C:\Users\Bowen\Desktop\OpenGL Tutorial\glfw_lib\libs;$(LibraryPath)</LibraryPath>
     <SourcePath>C:\Users\Bowen\Desktop\OpenGL Tutorial\learnopengl\LearnOpenGL\src;$(SourcePath)</SourcePath>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
@@ -116,7 +118,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc142-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
@@ -146,7 +148,7 @@
     <Link>
       <SubSystem>Console</SubSystem>
       <GenerateDebugInformation>true</GenerateDebugInformation>
-      <AdditionalDependencies>glfw3.lib;opengl32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <AdditionalDependencies>glfw3.lib;opengl32.lib;assimp-vc142-mt.lib;%(AdditionalDependencies)</AdditionalDependencies>
     </Link>
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
