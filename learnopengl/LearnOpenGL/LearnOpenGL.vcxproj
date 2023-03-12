@@ -31,6 +31,8 @@
     <ClInclude Include="inc\stb_image.h" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="src\resources\shaders\depth_testing.glsl" />
+    <None Include="src\resources\shaders\depth_testing_vertex.glsl" />
     <None Include="src\resources\shaders\light_frag.glsl" />
     <None Include="src\resources\shaders\light_vertex.glsl" />
     <None Include="src\resources\shaders\model_loading.glsl" />
