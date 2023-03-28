@@ -54,5 +54,6 @@
     <None Include="src\resources\shaders\model_loading.glsl" />
     <None Include="src\resources\shaders\depth_testing.glsl" />
     <None Include="src\resources\shaders\depth_testing_vertex.glsl" />
+    <None Include="src\resources\shaders\single_color_frag.glsl" />
   </ItemGroup>
 </Project>

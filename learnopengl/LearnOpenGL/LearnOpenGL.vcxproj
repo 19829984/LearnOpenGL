@@ -38,6 +38,7 @@
     <None Include="src\resources\shaders\model_loading.glsl" />
     <None Include="src\resources\shaders\shader_frag.glsl" />
     <None Include="src\resources\shaders\shader_vertex.glsl" />
+    <None Include="src\resources\shaders\single_color_frag.glsl" />
   </ItemGroup>
   <PropertyGroup Label="Globals">
     <VCProjectVersion>16.0</VCProjectVersion>
